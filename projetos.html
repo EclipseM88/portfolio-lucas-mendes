@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <title>Projetos | Lucas Mendes</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfólio de Lucas Mendes - Desenvolvedor Front-End especializado em criar experiências web responsivas e interativas">
+    <meta name="keywords" content="desenvolvedor front-end, portfolio, HTML, CSS, JavaScript, React">
+    <title>Lucas Mendes | Desenvolvedor Front-End</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+         <nav class="navbar">
+            <div class="logo">
+                <a href="index.html"><span>&lt;</span>Lucas Mendes<span>/&gt;</span></a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link active">Home</a></li>
+                <li class="nav-item"><a href="projetos.html" class="nav-link">Projetos</a></li>
+                <li class="nav-item"><a href="sobre.html" class="nav-link">Sobre</a></li>
+                <li class="nav-item"><a href="contato.html" class="nav-link">Contato</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="projects-intro">
+            <h1>Meus Projetos</h1>
+            <p>Aqui estão alguns dos trabalhos que desenvolvi ao longo da minha carreira.</p>
+        </section>
+
+        <section class="projects-filter">
+            <button class="filter-btn active" data-filter="all">Todos</button>
+            <button class="filter-btn" data-filter="html-css">HTML/CSS</button>
+            <button class="filter-btn" data-filter="javascript">JavaScript</button>
+            <button class="filter-btn" data-filter="react">React</button>
+        </section>
+
+        <section class="projects-grid">
+            <div class="project-card" data-category="html-css">
+                <img src="img/projetos/projeto1.jpg" alt="Projeto E-commerce">
+                <div class="project-info">
+                    <h3>Loja Virtual</h3>
+                    <p>E-commerce completo com design responsivo</p>
+                    <div class="project-tags">
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>Responsivo</span>
+                    </div>
+                    <a href="#" class="project-link">Ver detalhes</a>
+                </div>
+            </div>
+
+            <div class="project-card" data-category="javascript">
+                <img src="img/projetos/projeto2.jpg" alt="Aplicativo de Tarefas">
+                <div class="project-info">
+                    <h3>Task Manager</h3>
+                    <p>Aplicativo de gerenciamento de tarefas</p>
+                    <div class="project-tags">
+                        <span>JavaScript</span>
+                        <span>LocalStorage</span>
+                    </div>
+                    <a href="#" class="project-link">Ver detalhes</a>
+                </div>
+            </div>
+
+            <div class="project-card" data-category="react">
+                <img src="img/projetos/projeto3.jpg" alt="Dashboard Financeiro">
+                <div class="project-info">
+                    <h3>Finance Dashboard</h3>
+                    <p>Painel de controle financeiro com gráficos</p>
+                    <div class="project-tags">
+                        <span>React</span>
+                        <span>Chart.js</span>
+                    </div>
+                    <a href="#" class="project-link">Ver detalhes</a>
+                </div>
+            </div>
+
+            <!-- Mais projetos... -->
+        </section>
+
+        <div class="project-counter">
+            <p>Mostrando <span id="visible-projects">6</span> de <span id="total-projects">8</span> projetos</p>
+        </div>
+    </main>
+
+    <footer>
+         <div class="footer-content">
+            <div class="footer-section">
+                <h3>Links Rápidos</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="projetos.html">Projetos</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Redes Sociais</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Newsletter</h3>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Seu e-mail">
+                    <button type="submit">Assinar</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Lucas Mendes. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/projects-filter.js"></script>
+</body>
+</html>
